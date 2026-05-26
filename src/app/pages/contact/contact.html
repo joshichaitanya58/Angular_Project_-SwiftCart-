@@ -1,0 +1,84 @@
+<div class="contactcss">
+  <div class="container mt-4">
+    <h2 class="mb-4 text-primary">Template Driven Form (Without FormControl)</h2>
+
+    <form #formRef="ngForm" (ngSubmit)="onSubmit()" class="p-4 border rounded shadow-sm bg-light">
+
+      <!-- Name -->
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="user.name" placeholder="Enter your name"
+          required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="user.email" placeholder="Enter your email"
+          required>
+      </div>
+
+      <!-- Mobile -->
+      <div class="mb-3">
+        <label class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" name="mobile" [(ngModel)]="user.mobile"
+          placeholder="Enter your Mobile Number" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="male" [(ngModel)]="user.gender"
+            required>
+          <label class="form-check-label" for="male">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="female"
+            [(ngModel)]="user.gender" required>
+          <label class="form-check-label" for="female">
+            Female
+          </label>
+        </div>
+      </div>
+
+      <!-- Country -->
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <select id="country" class="form-select" name="country" [(ngModel)]="user.country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option *ngFor="let country of country" [value]="country.code">{{ country.name }}</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <input type="text" class="form-control" name="message" [(ngModel)]="user.message"
+          placeholder="Enter your Message" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="user.password"
+          placeholder="Enter your password" required>
+      </div>
+
+
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary w-100" [disabled]="formRef.invalid">
+        Submit
+      </button>
+    </form>
+
+    <!-- Preview Data -->
+    <!-- <div class="mt-4">
+      <h5>Form Data Preview:</h5>
+      <pre class="bg-dark text-white p-3 rounded">{{ user | json }}</pre>
+    </div> -->
+  </div>
+</div>

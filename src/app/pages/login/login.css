@@ -1,0 +1,12 @@
+form{
+    margin: 50px;
+    margin-left: 450px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 400px;
+    
+}

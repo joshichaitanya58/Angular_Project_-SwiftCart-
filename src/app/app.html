@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="app.css">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container-fluid">
+      <!-- Brand Name and Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path d="M14 3H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 2v9H2V5h12z" />
+          <path d="M8 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM8 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0z" />
+          <path d="M11 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM11 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0z" />
+        </svg>
+        SwiftCart
+        
+      </a>
+
+      <!-- Mobile Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" routerLink="/home" routerLinkActive="active" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/service" routerLinkActive="active">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/reactive_form" routerLinkActive="active">Reactive_Form</a>
+          </li>
+        </ul>
+       
+
+        <!-- User and Cart Icons -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/login" routerLinkActive="active">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 5.548 10 8 10s4.758 1.226 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+              <span class="d-lg-none ms-2">Account</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/cart" routerLinkActive="active">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+              <span class="d-lg-none ms-2">Cart</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+ 
+
+
+  <!-- footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SwiftCart</h5>
+          <p>
+            SwiftCart is dedicated to providing you with the best products and exceptional customer service. We believe
+            in quality, transparency, and a seamless shopping experience from start to finish. Shop with confidence,
+            knowing we're here to help you every step of the way.
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white">Products</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">New Arrivals</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Best Sellers</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Sales</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white">Helpful Links</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Contact Us</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">FAQ</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Shipping</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Returns</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h5>
+          <p><i class="fas fa-home me-3"></i>  Dhule, Maharastra, INDIA</p>
+          <p><i class="fas fa-envelope me-3"></i> SwiftCart@gmail.com</p>
+          <p><i class="fas fa-phone me-3"></i> +91 1234567890</p>
+          <p><i class="fas fa-print me-3"></i> +91 1634789204</p>
+        </div>
+
+      </div>
+
+      <hr class="my-3">
+
+      <div class="row align-items-center">
+
+        <div class="col-md-7 col-lg-8">
+          <p class="text-center text-md-start">© 2025 All rights reserved by:
+            <a href="#" class="text-warning" style="text-decoration: none;">
+              <strong>SwiftCart</strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-end">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-google"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
